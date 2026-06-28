@@ -1,8 +1,56 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
-	}
+.header {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+	background: #3A3A3A;
+}
+
+
+.user-profile {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+	margin-right: 20px;
+	margin-top: 12px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Слайдер */
+.nav-slider {
+    display: flex;
+    gap: 15px;
+    padding: 0 20px;
+    overflow-x: auto;      /* Дозволяє гортати */
+    white-space: nowrap;   /* Забороняє перенос кнопок */
+    scrollbar-width: none; /* Ховає скролбар (Firefox) */
+	margin-bottom: 36px;
+	margin-top: 20px;
+}
+
+.nav-slider::-webkit-scrollbar {
+    display: none; /* Ховає скролбар (Chrome, Safari) */
+}
+
+/* Стиль кнопок */
+.nav-btn {
+    text-decoration: none;
+    border: 2px solid #a319a3;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+/* Виділення активної кнопки */
+.nav-btn.active {
+    background-color: #a319a3;
 }

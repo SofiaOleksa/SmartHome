@@ -1,14 +1,13 @@
-/* Обгортка додатку (імітація мобільного екрана) */
+
 .dashboard {
-    max-width: 420px; /* Ширина телефону */
+    max-width: 420px;
     width: 100%;
-    min-height: 100vh;
     margin: 0 auto;
-    background-color: #383838; /* Темно-сірий фон застосунку */
+    background-color: #3A3A3A;
     position: relative;
-    overflow: hidden; /* Щоб фонові лінії не створювали скрол */
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 /* Декоративні фонові лінії (розкоментуйте і вставте свій шлях) */
@@ -31,7 +30,6 @@
     z-index: 1;
 }
 
-/* Шапка (Аватарка) */
 .top-bar {
     display: flex;
     justify-content: flex-end;
@@ -39,8 +37,8 @@
 }
 
 .avatar {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -56,10 +54,9 @@
 }
 
 .categories::-webkit-scrollbar {
-    display: none; /* Ховаємо скрол в Chrome/Safari */
+    display: none;
 }
 
-/* Кнопки категорій */
 .cat-btn {
     background: transparent;
     border: 2px solid #a319a3; /* Фіолетова рамка */
@@ -73,12 +70,10 @@
     transition: all 0.3s ease;
 }
 
-/* Активна кнопка категорії */
 .cat-btn.active {
     background-color: #a319a3; /* Фіолетовий фон */
 }
 
-/* Загальні стилі для секцій з інформацією */
 .info-section {
     text-align: center;
     margin-bottom: 40px;
@@ -86,32 +81,30 @@
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     margin: 0 0 20px 0;
     letter-spacing: 0.5px;
 }
 
-/* Плашка статусу (Електроживлення) */
 .status-badge {
     display: inline-block;
     background-color: #a2e578; /* Світло-зелений */
     color: #222222;
     padding: 14px 24px;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
 }
 
-/* Кнопка "Поставити на охорону" */
 .arm-button {
-    width: 260px;
-    height: 260px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    background-color: #7be4eb; /* Бірюзовий/Ціан */
+    background-color: #7be4eb;
     color: #222222;
     border: 15px solid #484848; /* Темно-сіре кільце навколо */
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 800;
     cursor: pointer;
     display: flex;
@@ -124,4 +117,7 @@ h2 {
 
 .arm-button:active {
     transform: scale(0.95); /* Ефект натискання */
+}
+.arm-button:focus {
+    outline: none;
 }
