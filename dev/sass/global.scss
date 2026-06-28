@@ -1,0 +1,20 @@
+html {
+    font-size: $font-size;
+    font-family: $font-primary;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 0px;
+        background:  $bg-body;
+    }
+}
+
+body {
+    background-color: $bg-gradient;
+    color: $color-text;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
